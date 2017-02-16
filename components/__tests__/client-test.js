@@ -22,4 +22,10 @@ describe('Counter', () => {
     const count = dom.querySelector('#counter').textContent
     expect(count).toBe('10')
   })
+
+  it('should render correct number', () => {
+    const dom = renderComponent(10)
+    const count = dom.querySelector('#counter').textContent
+    expect(count).toBe('20')
+  })
 })
